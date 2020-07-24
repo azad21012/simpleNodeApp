@@ -1,9 +1,13 @@
+# install main image
 FROM node:10.16.3-alpine
 
-WORKDIR /usr/app
+# WORKDIR /usr/app
 
-COPY ./package.json ./
-RUN npm install
+# COPY ./package.json ./
 COPY . .
+#  install aplication
+RUN npm install
+# COPY . .
 
+# stage 3 start application 
 CMD ["npm","start"]
