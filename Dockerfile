@@ -12,3 +12,4 @@ COPY . .
 
 # stage 3 start application 
 CMD ["npm","start"]
+EXPOSE 8080
